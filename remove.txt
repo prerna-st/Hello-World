@@ -1,0 +1,61 @@
+Employee->Candidate
+
+list ->candidates
+
+{
+    "candidateId":110,
+    "email":"prerna@xyz.com",
+    "firstname":"xyz",
+    "lastName":"abc",
+    "phone":"5465434567"
+}
+
+
+
+candiates-topiclist
+
+"CandidateId"+Candidate.candidateId+"email"+Candidate.email+"firstName"+Candidate.firstName+
+
+
+
+/*@PostMapping(
+		  path="/add",
+          consumes="application/json",
+		  produces="application/json"
+		// value="/add"
+		  
+		  )
+  public ResponseEntity<Object> add(@RequestBody Candidate candidate)
+  {
+	  
+      // Creating an ID of an candidate
+      // from the number of candidates
+      Integer candidateId
+          = candidateService
+                .getAll()
+                
+                .size()
+            + 1;
+
+      candidate.setCandidateId(candidateId);
+
+      candidateService.add(candidate);
+
+      URI location
+          = ServletUriComponentsBuilder
+                .fromCurrentRequest()
+                .path("/{candidateId}")
+                .buildAndExpand(
+                    candidate.getCandidateId())
+                .toUri();
+
+             return ResponseEntity
+          .created(location)
+          .build();
+  }*/
+
+
+method=RequestMethod.POST,
+
+method=RequestMethod.PUT,
+method=RequestMethod.DELETE,
